@@ -1,0 +1,268 @@
+<!DOCTYPE html><html class="dark" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Club Gym - Máquinas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Roboto+Flex:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#1f1f1f",
+                    "surface-container-low": "#1b1b1b",
+                    "on-background": "#e2e2e2",
+                    "secondary-fixed-dim": "#c8c5ca",
+                    "primary-fixed": "#ffdad6",
+                    "on-surface-variant": "#e6bdb8",
+                    "inverse-surface": "#e2e2e2",
+                    "inverse-primary": "#bf0715",
+                    "error": "#ffb4ab",
+                    "on-secondary": "#303033",
+                    "tertiary-fixed": "#cbe6ff",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-tertiary-container": "#f3f8ff",
+                    "surface": "#131313",
+                    "outline": "#ac8884",
+                    "on-surface": "#e2e2e2",
+                    "surface-container-highest": "#353535",
+                    "surface-bright": "#393939",
+                    "on-tertiary": "#003450",
+                    "background": "#131313",
+                    "tertiary": "#90cdff",
+                    "secondary-fixed": "#e4e1e6",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#93000b",
+                    "secondary": "#c8c5ca",
+                    "primary": "#ffb4ab",
+                    "on-secondary-fixed-variant": "#47464a",
+                    "on-tertiary-fixed-variant": "#004b71",
+                    "primary-container": "#dc2626",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-variant": "#353535",
+                    "on-primary": "#690005",
+                    "surface-tint": "#ffb4ab",
+                    "on-secondary-fixed": "#1b1b1e",
+                    "surface-dim": "#131313",
+                    "secondary-container": "#47464a",
+                    "outline-variant": "#5c403c",
+                    "inverse-on-surface": "#303030",
+                    "tertiary-fixed-dim": "#90cdff",
+                    "on-primary-container": "#fff6f5",
+                    "error-container": "#93000a",
+                    "on-primary-fixed": "#410002",
+                    "on-error": "#690005",
+                    "on-secondary-container": "#b6b4b8",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "tertiary-container": "#0078b2",
+                    "on-tertiary-fixed": "#001e30"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Oswald"],
+                    "body-lg": ["Roboto Flex"],
+                    "display-lg": ["Oswald"],
+                    "headline-lg-mobile": ["Oswald"],
+                    "label-md": ["Roboto Flex"],
+                    "headline-sm": ["Oswald"],
+                    "headline-lg": ["Oswald"],
+                    "body-md": ["Roboto Flex"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-surface-variant w-full z-50 sticky top-0">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-sm tracking-tighter text-primary-container uppercase" href="#">
+                CLUB GYM
+            </a>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-label-md text-label-md text-on-surface hover:text-primary-container transition-colors hover:scale-105 duration-200" href="#">
+                    Ejercicios
+                </a>
+<a class="font-label-md text-label-md text-primary-container font-bold border-b-2 border-primary-container pb-1 hover:scale-105 transition-transform duration-200" href="#">
+                    Máquinas
+                </a>
+<a class="font-label-md text-label-md text-on-surface hover:text-primary-container transition-colors hover:scale-105 duration-200" href="#">
+                    Rutinas
+                </a>
+</nav>
+
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<div class="mb-16">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase mb-4">
+                nuestras&nbsp;<span class="text-primary-container">maquinas</span></h1>
+
+</div>
+<!-- Machines Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="bg-surface-container-low border border-surface-variant group hover:scale-105 transition-transform duration-300 flex flex-col h-full">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img alt="Leg Press Machine" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A cinematic, high-contrast photograph of a modern, heavy-duty leg press machine in an elite gym. The setting is dark and intense, illuminated by dramatic spotlighting with subtle neon red ambient light spilling from the background. The machine is made of matte black steel with pristine synthetic leather pads. The mood is powerful and focused, perfectly aligning with an aggressive, uncompromising fitness aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoU6uJyCC-mIDYvreG-xTv-2t8IjsAZsjZsITULFbnwMTaYcXTawe_xpWvcAwMdz3rErcI2lUePy_CJrMATogABsfiZvftDgAOkuOEUi9gNil0NyZ7jkted6vkNZa4UoPBkBpoXyV_evPYo1UVmFJUc9ph5mh7XnN4HxDnogAawn2Kbfh_1hGXzbt5NmeZSSEs8UYrECMK3CBJyPiSBsNHST43P_ReY3A173BGZdJqA1MxdEPGUKE9ipB0AcfNe5cBdd_o1UUKzUU">
+<div class="absolute top-4 right-4 bg-surface-container-highest px-3 py-1 border border-surface-variant">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-widest text-[10px]">Piernas</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-sm text-on-surface uppercase mb-4">Prensa de Piernas</h2>
+<div class="mb-6 flex-grow">
+<h3 class="font-label-md text-label-md text-primary-container uppercase mb-2">¿Cómo usar?</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm mt-1 fill">fiber_manual_record</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Espalda baja completamente apoyada en el respaldo en todo momento.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm mt-1 fill">fiber_manual_record</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Pies separados a la anchura de los hombros en el centro de la plataforma.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm mt-1 fill">fiber_manual_record</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">No bloquees las rodillas en la extensión máxima.</span>
+</li>
+</ul>
+</div>
+<button class="w-full border border-on-surface text-on-surface font-headline-md text-label-md px-4 py-3 uppercase tracking-wide hover:bg-on-surface hover:text-surface transition-colors duration-200 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+                        Ver Video
+                    </button>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-low border border-surface-variant group hover:scale-105 transition-transform duration-300 flex flex-col h-full">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img alt="Lat Pulldown Machine" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A dramatic, low-key lighting photograph of a commercial lat pulldown cable machine inside a premium, hardcore training facility. The environment is dark with stark white overhead lights casting sharp shadows, highlighting the heavy black iron weight stack and cables. A subtle red glow emanates from off-camera. The aesthetic is raw, industrial, and hyper-focused on strength." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMrnJwIZ8HIFrzLcqzNjeW2_BHvquhnRUo-QNXibpNscbhObtZf0UGJuByGKUq5tzaoZ6xp5XT_5dVovIvGZxz7Vp8yJ4lVByr0LdoEpIHtdlSktc4UL24K2X-LsG7uQTwsJ2ViLJZtxgo6vDLTbPaZW1x7pdXneHUgIeOBNgesirpJ79tMdFne8DPn6a2cOPvWNwKdNJmO2q_-15e_8LSD0_4v0LK0YV0px_TTbuGNsSIGO1CYLUSWweKFv5fT6MIxqtvItGZ2Y8">
+<div class="absolute top-4 right-4 bg-surface-container-highest px-3 py-1 border border-surface-variant">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-widest text-[10px]">Espalda</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-sm text-on-surface uppercase mb-4">Polea Alta</h2>
+<div class="mb-6 flex-grow">
+<h3 class="font-label-md text-label-md text-primary-container uppercase mb-2">¿Cómo usar?</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm mt-1 fill">fiber_manual_record</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Agarre ligeramente más ancho que los hombros.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm mt-1 fill">fiber_manual_record</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Saca el pecho y tira de la barra hacia la parte superior del esternón.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm mt-1 fill">fiber_manual_record</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Controla la fase excéntrica, no dejes que el peso tire de ti.</span>
+</li>
+</ul>
+</div>
+<button class="w-full border border-on-surface text-on-surface font-headline-md text-label-md px-4 py-3 uppercase tracking-wide hover:bg-on-surface hover:text-surface transition-colors duration-200 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+                        Ver Video
+                    </button>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-low border border-surface-variant group hover:scale-105 transition-transform duration-300 flex flex-col h-full">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img alt="Treadmill" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A sleek, futuristic treadmill viewed from a slight angle in a dark, high-end commercial gym setting. The machine features an illuminated digital console that glows sharply against the black environment. Deep shadows surround the equipment, cut by a singular, intense red LED strip in the background. The mood is intense, modern, and uncompromisingly premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTud1x0ngZhL-m982EU_2ii0qc50czTrNiGSEhwt_YTH5dBwbqrFlyb1hhjuthpR9QsPdeHCcqFuhKrJQDtf8DH8BFP_qQ-00skENwXblS7Ho5X3YEkYWY4Zj76nB8pPqqczOIeeElyLbJCVvdmR4-cr-ufuUqynhbxfPyRH6tPPhDdtQ4owBigdZuB_4KNd4cKP_pwp7cqnQzE2gt0oXK4L1OKPAkIIAai8TEkbK9OYkyeuoiBuU0Qw7lbZEyo6uSjtC2Y8A5oJA">
+<div class="absolute top-4 right-4 bg-surface-container-highest px-3 py-1 border border-surface-variant">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-widest text-[10px]">Cardio</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-sm text-on-surface uppercase mb-4">Cinta de Correr</h2>
+<div class="mb-6 flex-grow">
+<h3 class="font-label-md text-label-md text-primary-container uppercase mb-2">¿Cómo usar?</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm mt-1 fill">fiber_manual_record</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Mantén la vista al frente, no mires tus pies.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm mt-1 fill">fiber_manual_record</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Aterriza con la parte media del pie para reducir el impacto articular.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm mt-1 fill">fiber_manual_record</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Usa la pinza de seguridad en todo momento.</span>
+</li>
+</ul>
+</div>
+<button class="w-full border border-on-surface text-on-surface font-headline-md text-label-md px-4 py-3 uppercase tracking-wide hover:bg-on-surface hover:text-surface transition-colors duration-200 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+                        Ver Video
+                    </button>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-surface-variant w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="md:col-span-1 flex flex-col items-start justify-center mb-8 md:mb-0">
+<span class="font-headline-md text-headline-md text-on-surface uppercase">CLUB GYM</span>
+</div>
+<div class="md:col-span-2 flex flex-wrap gap-x-8 gap-y-4 items-center justify-start md:justify-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary-container transition-colors focus:ring-2 focus:ring-primary-container uppercase" href="#">Privacidad</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary-container transition-colors focus:ring-2 focus:ring-primary-container uppercase" href="#">Términos</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary-container transition-colors focus:ring-2 focus:ring-primary-container uppercase" href="#">Contacto</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary-container transition-colors focus:ring-2 focus:ring-primary-container uppercase" href="#">Soporte</a>
+</div>
+<div class="md:col-span-1 flex items-center justify-start md:justify-end">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                    © 2024 CLUB GYM. UNCOMPROMISING PERFORMANCE.
+                </p>
+</div>
+</div>
+</footer>
+
+
+</body></html>
