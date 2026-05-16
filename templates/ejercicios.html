@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ejercicios - CLUB GYM</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500&display=swap');
+        
+        body { font-family: 'Roboto', sans-serif; }
+        h1, h2, h3, .nav-link { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen selection:bg-red-600 selection:text-white">
+<!-- TopNavBar -->
+<nav class="flex justify-between items-center py-5 px-10 bg-black/95 backdrop-blur-sm border-b-2 border-red-600 sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<a class="w-32 h-12 flex items-center justify-center font-bold text-2xl tracking-wider nav-link" href="#">
+<span class="text-red-600 mr-1">CLUB</span><span class="text-white">GYM</span>
+</a>
+</div>
+<div class="hidden md:flex gap-8">
+<a class="nav-link text-red-600 transition-colors duration-300 text-lg tracking-wide font-bold border-b-2 border-red-600 pb-1" href="#">Ejercicios</a>
+<a class="nav-link text-zinc-300 hover:text-red-600 transition-colors duration-300 text-lg tracking-wide" href="#">Máquinas</a>
+<a class="nav-link text-zinc-300 hover:text-red-600 transition-colors duration-300 text-lg tracking-wide" href="#">Rutinas</a>
+</div>
+
+</nav>
+<!-- Main Content -->
+<main class="max-w-7xl mx-auto px-8 py-16 space-y-24">
+<!-- Header & Search -->
+<header>
+<h1 class="text-4xl md:text-5xl font-bold tracking-wider mb-8">BIBLIOTECA DE EJERCICIOS</h1>
+<div class="relative w-full md:w-2/3 lg:w-1/2 group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500 group-focus-within:text-red-600 transition-colors" data-icon="search">search</span>
+<input class="w-full bg-zinc-900 border-2 border-zinc-800 text-white py-4 pl-12 pr-4 focus:outline-none focus:border-red-600 focus:shadow-[0_0_15px_rgba(220,38,38,0.3)] transition-all placeholder:text-zinc-500 rounded-sm" placeholder="Buscar por nombre, músculo o equipo..." type="text">
+</div>
+</header>
+<!-- Section: Pecho -->
+<section>
+<div class="flex items-center gap-4 mb-12">
+<div class="w-3 h-10 bg-red-600 shadow-[0_0_10px_rgba(220,38,38,0.5)]"></div>
+<h2 class="text-4xl font-bold tracking-wider">PECHO</h2>
+<span class="bg-zinc-800 text-zinc-300 px-3 py-1 text-sm font-bold tracking-wider rounded-sm ml-4 nav-link">12 MOVIMIENTOS</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<article class="bg-zinc-900 border-2 border-zinc-800 hover:border-red-600 transition-all duration-300 flex flex-col group hover:scale-105 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] rounded-sm cursor-pointer relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+<div class="h-56 w-full relative overflow-hidden bg-zinc-800">
+<img alt="Bench press exercise" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzkXXhoQb4Qmd5VUYCPiuMEhVOCfem2NXduXeGoS_Qu81V5Z4oWwp8CLm_HE9LJR84rJn1F_rlcr2BdyYxNoi17cefyYQn2UuKYzGblzL3mcmMpg-DM_7FUJP_Sv8nV3mueNvwDnZz7Z7Xe-H-La2ZYRgvFMotya7iIXVyIAbbJ0v4zuhFg8oh4rUEC1nopE7l6LZaW5j9Etbluz9DvvInjTlEa7g3WeMP4a5NK8fBmhes3rHDKgyDedmuMd-fZ6O1Eu2P2sNGLIU">
+</div>
+<div class="p-6 flex flex-col flex-grow relative z-10">
+<h3 class="text-2xl font-bold text-white mb-2 group-hover:text-white transition-colors">Press de Banca Plano</h3>
+<span class="bg-zinc-800 text-zinc-300 px-2 py-1 text-xs font-bold tracking-wider inline-block mb-4 self-start rounded-sm nav-link">INTERMEDIO</span>
+<p class="text-zinc-400 mb-6 flex-grow text-sm">El ejercicio fundamental para el desarrollo de la masa y fuerza pectoral. Enfoque en la técnica de retracción escapular y empuje explosivo.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-zinc-800">
+<span class="text-zinc-500 text-sm font-bold tracking-wider nav-link">BARRA / BANCO</span>
+<span class="material-symbols-outlined text-zinc-500 group-hover:text-red-600 transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-zinc-900 border-2 border-zinc-800 hover:border-red-600 transition-all duration-300 flex flex-col group hover:scale-105 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] rounded-sm cursor-pointer relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+<div class="h-56 w-full relative overflow-hidden bg-zinc-800">
+<img alt="Dumbbell flys" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5v45Dw8tpnc4Bpw1MwrdLhYj8rcNFvEj_1VogkPY67DFSTH6Z7B5zNNn9CMMLIml8B1aBEcyCdgyC6MBiahDgiabhkpXrOFTVJQCrrXmCsC-tZyyYTCJbw2esdLNoQvMKNzufMe91-drQ8bNI2DpO99EFun1kslMHXgbS6NOhM_Ax6r5xs19uwU7WvuNYGCsJPW_BfW7TlQBlFUht34jeWNrP0xpUT0Kek9DuKkgWhUd_HZR2YY5vneq-bScAnV-C_rsThmVCcxc">
+</div>
+<div class="p-6 flex flex-col flex-grow relative z-10">
+<h3 class="text-2xl font-bold text-white mb-2 group-hover:text-white transition-colors">Aperturas con Mancuernas</h3>
+<span class="bg-zinc-800 text-zinc-300 px-2 py-1 text-xs font-bold tracking-wider inline-block mb-4 self-start rounded-sm nav-link">PRINCIPIANTE</span>
+<p class="text-zinc-400 mb-6 flex-grow text-sm">Movimiento de aislamiento diseñado para estirar y contraer las fibras del pecho. Mantén un ligero ángulo en los codos para proteger la articulación.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-zinc-800">
+<span class="text-zinc-500 text-sm font-bold tracking-wider nav-link">MANCUERNAS</span>
+<span class="material-symbols-outlined text-zinc-500 group-hover:text-red-600 transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-zinc-900 border-2 border-zinc-800 hover:border-red-600 transition-all duration-300 flex flex-col group hover:scale-105 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] rounded-sm cursor-pointer relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+<div class="h-56 w-full relative overflow-hidden bg-zinc-800">
+<div class="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 opacity-50"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-zinc-600 opacity-50" data-icon="fitness_center">fitness_center</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow relative z-10">
+<h3 class="text-2xl font-bold text-white mb-2 group-hover:text-white transition-colors">Cruce de Poleas</h3>
+<span class="bg-red-600/20 border border-red-600 text-red-500 px-2 py-1 text-xs font-bold tracking-wider inline-block mb-4 self-start rounded-sm nav-link">AVANZADO</span>
+<p class="text-zinc-400 mb-6 flex-grow text-sm">Tensión constante a través de todo el rango de movimiento. Ideal para finalizar la rutina de pecho buscando el máximo bombeo muscular.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-zinc-800">
+<span class="text-zinc-500 text-sm font-bold tracking-wider nav-link">POLEAS</span>
+<span class="material-symbols-outlined text-zinc-500 group-hover:text-red-600 transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Section: Espalda -->
+<section>
+<div class="flex items-center gap-4 mb-12">
+<div class="w-3 h-10 bg-red-600 shadow-[0_0_10px_rgba(220,38,38,0.5)]"></div>
+<h2 class="text-4xl font-bold tracking-wider">ESPALDA</h2>
+<span class="bg-zinc-800 text-zinc-300 px-3 py-1 text-sm font-bold tracking-wider rounded-sm ml-4 nav-link">8 MOVIMIENTOS</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<article class="bg-zinc-900 border-2 border-zinc-800 hover:border-red-600 transition-all duration-300 flex flex-col group hover:scale-105 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] rounded-sm cursor-pointer relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+<div class="h-56 w-full relative overflow-hidden bg-zinc-800">
+<img alt="Lat pulldown" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuDUNQ_m0T5skn1zYjkiy6IzjcVCcWBjR5o2tQ-9gHwUzQJufP89HOS1Nb9TAjF1R4_lZ-I0XR1JFMR4H1d24JZqFb6DXYQll5BbzDf0R3iZkjsFdkc-AzxBmcJVOCqNjMv1BSSbO0SXbFAZqnuwYhApEiHiz0i6CLTPlpPdCqN2c3rKkMlXxCVsS9Y58WElyJoca_Xy2bk-oRLq6Cc39hYpqTQONHO9b7xFEHaKGRFKaJd1t7zmObzium5_UYBrF3puekgJAFxAc">
+</div>
+<div class="p-6 flex flex-col flex-grow relative z-10">
+<h3 class="text-2xl font-bold text-white mb-2 group-hover:text-white transition-colors">Jalón al Pecho</h3>
+<span class="bg-zinc-800 text-zinc-300 px-2 py-1 text-xs font-bold tracking-wider inline-block mb-4 self-start rounded-sm nav-link">PRINCIPIANTE</span>
+<p class="text-zinc-400 mb-6 flex-grow text-sm">Construye amplitud en el dorsal ancho. Mantén el torso ligeramente inclinado hacia atrás y tira desde los codos, no desde las manos.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-zinc-800">
+<span class="text-zinc-500 text-sm font-bold tracking-wider nav-link">MÁQUINA</span>
+<span class="material-symbols-outlined text-zinc-500 group-hover:text-red-600 transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-zinc-900 border-2 border-zinc-800 hover:border-red-600 transition-all duration-300 flex flex-col group hover:scale-105 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] rounded-sm cursor-pointer relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+<div class="h-56 w-full relative overflow-hidden bg-zinc-800">
+<div class="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 opacity-50"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-zinc-600 opacity-50" data-icon="fitness_center">fitness_center</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow relative z-10">
+<h3 class="text-2xl font-bold text-white mb-2 group-hover:text-white transition-colors">Remo con Barra</h3>
+<span class="bg-red-600/20 border border-red-600 text-red-500 px-2 py-1 text-xs font-bold tracking-wider inline-block mb-4 self-start rounded-sm nav-link">AVANZADO</span>
+<p class="text-zinc-400 mb-6 flex-grow text-sm">Ejercicio constructor de densidad para toda la espalda superior e inferior. Requiere un fuerte control del core y técnica estricta.</p>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-zinc-800">
+<span class="text-zinc-500 text-sm font-bold tracking-wider nav-link">BARRA LIBRE</span>
+<span class="material-symbols-outlined text-zinc-500 group-hover:text-red-600 transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t-2 border-zinc-800 mt-24">
+<div class="max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div>
+<span class="text-3xl font-bold tracking-wider block mb-2 nav-link">CLUB GYM</span>
+<p class="text-zinc-500 text-sm">Forja tu mejor versión en el entorno más exigente.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-zinc-500 hover:text-red-600 transition-colors text-sm font-bold tracking-widest nav-link" href="#">PRIVACIDAD</a>
+<a class="text-zinc-500 hover:text-red-600 transition-colors text-sm font-bold tracking-widest nav-link" href="#">TÉRMINOS</a>
+<a class="text-zinc-500 hover:text-red-600 transition-colors text-sm font-bold tracking-widest nav-link" href="#">CONTACTO</a>
+</div>
+</div>
+<div class="border-t border-zinc-800 py-6 text-center">
+<p class="text-zinc-600 text-xs tracking-widest nav-link">
+                © 2024 CLUB GYM. UNCOMPROMISING PERFORMANCE.
+            </p>
+</div>
+</footer>
+
+
+</body></html>

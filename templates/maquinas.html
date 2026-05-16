@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Club Gym - Máquinas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500&display=swap');
+        
+        body { font-family: 'Roboto', sans-serif; }
+        h1, h2, h3, .nav-link { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="flex justify-between items-center py-5 px-10 bg-black/95 backdrop-blur-sm border-b-2 border-red-600 sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="w-32 h-12 flex items-center justify-center font-bold text-2xl tracking-wider">
+<span class="text-red-600 mr-1">CLUB</span><span class="text-white">GYM</span>
+</div>
+</div>
+<div class="hidden md:flex gap-8">
+<a class="nav-link text-zinc-300 hover:text-red-600 transition-colors duration-300 text-lg tracking-wide" href="#">Ejercicios</a>
+<a class="nav-link text-red-600 transition-colors duration-300 text-lg tracking-wide border-b-2 border-red-600 pb-1" href="#">Máquinas</a>
+<a class="nav-link text-zinc-300 hover:text-red-600 transition-colors duration-300 text-lg tracking-wide" href="#">Rutinas</a>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow max-w-7xl mx-auto px-8 py-16 space-y-16 w-full">
+<section>
+<div class="flex items-center gap-4 mb-12">
+<div class="w-3 h-10 bg-red-600 shadow-[0_0_10px_rgba(220,38,38,0.5)]"></div>
+<h2 class="text-4xl font-bold tracking-wider">NUESTRAS MAQUINAS</h2>
+</div>
+<!-- Machines Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-zinc-900 border-2 border-zinc-800 hover:border-red-600 transition-all duration-300 flex flex-col group hover:scale-105 hover:shadow-[0_0_15px_rgba(220,38,38,0.5)] rounded-sm overflow-hidden h-full cursor-pointer relative">
+<div class="relative w-full h-64 overflow-hidden bg-zinc-800">
+<img alt="Leg Press Machine" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoU6uJyCC-mIDYvreG-xTv-2t8IjsAZsjZsITULFbnwMTaYcXTawe_xpWvcAwMdz3rErcI2lUePy_CJrMATogABsfiZvftDgAOkuOEUi9gNil0NyZ7jkted6vkNZa4UoPBkBpoXyV_evPYo1UVmFJUc9ph5mh7XnN4HxDnogAawn2Kbfh_1hGXzbt5NmeZSSEs8UYrECMK3CBJyPiSBsNHST43P_ReY3A173BGZdJqA1MxdEPGUKE9ipB0AcfNe5cBdd_o1UUKzUU"/>
+<div class="absolute top-4 right-4 bg-zinc-900 px-3 py-1 border border-zinc-700">
+<span class="text-white uppercase tracking-widest text-[10px] font-bold font-['Oswald']">Piernas</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow relative z-10">
+<h3 class="text-2xl font-bold text-white mb-4">PRENSA DE PIERNAS</h3>
+<div class="mb-6 flex-grow">
+<h4 class="text-red-500 uppercase mb-2 font-bold font-['Oswald'] tracking-wider text-sm">¿Cómo usar?</h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-red-600 text-sm mt-1 fill">fiber_manual_record</span>
+<span class="text-zinc-400 text-sm">Espalda baja completamente apoyada en el respaldo en todo momento.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-red-600 text-sm mt-1 fill">fiber_manual_record</span>
+<span class="text-zinc-400 text-sm">Pies separados a la anchura de los hombros en el centro de la plataforma.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-red-600 text-sm mt-1 fill">fiber_manual_record</span>
+<span class="text-zinc-400 text-sm">No bloquees las rodillas en la extensión máxima.</span>
+</li>
+</ul>
+</div>
+<button class="w-full bg-transparent border-2 border-zinc-700 text-white font-bold py-3 px-4 transition-all duration-300 hover:bg-red-600 hover:border-red-600 hover:shadow-[0_0_10px_rgba(220,38,38,0.4)] tracking-wide flex items-center justify-center gap-2 font-['Oswald']">
+<span class="material-symbols-outlined">play_circle</span>
+                            VER VIDEO
+                        </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-zinc-900 border-2 border-zinc-800 hover:border-red-600 transition-all duration-300 flex flex-col group hover:scale-105 hover:shadow-[0_0_15px_rgba(220,38,38,0.5)] rounded-sm overflow-hidden h-full cursor-pointer relative">
+<div class="relative w-full h-64 overflow-hidden bg-zinc-800">
+<img alt="Lat Pulldown Machine" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMrnJwIZ8HIFrzLcqzNjeW2_BHvquhnRUo-QNXibpNscbhObtZf0UGJuByGKUq5tzaoZ6xp5XT_5dVovIvGZxz7Vp8yJ4lVByr0LdoEpIHtdlSktc4UL24K2X-LsG7uQTwsJ2ViLJZtxgo6vDLTbPaZW1x7pdXneHUgIeOBNgesirpJ79tMdFne8DPn6a2cOPvWNwKdNJmO2q_-15e_8LSD0_4v0LK0YV0px_TTbuGNsSIGO1CYLUSWweKFv5fT6MIxqtvItGZ2Y8"/>
+<div class="absolute top-4 right-4 bg-zinc-900 px-3 py-1 border border-zinc-700">
+<span class="text-white uppercase tracking-widest text-[10px] font-bold font-['Oswald']">Espalda</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow relative z-10">
+<h3 class="text-2xl font-bold text-white mb-4">POLEA ALTA</h3>
+<div class="mb-6 flex-grow">
+<h4 class="text-red-500 uppercase mb-2 font-bold font-['Oswald'] tracking-wider text-sm">¿Cómo usar?</h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-red-600 text-sm mt-1 fill">fiber_manual_record</span>
+<span class="text-zinc-400 text-sm">Agarre ligeramente más ancho que los hombros.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-red-600 text-sm mt-1 fill">fiber_manual_record</span>
+<span class="text-zinc-400 text-sm">Saca el pecho y tira de la barra hacia la parte superior del esternón.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-red-600 text-sm mt-1 fill">fiber_manual_record</span>
+<span class="text-zinc-400 text-sm">Controla la fase excéntrica, no dejes que el peso tire de ti.</span>
+</li>
+</ul>
+</div>
+<button class="w-full bg-transparent border-2 border-zinc-700 text-white font-bold py-3 px-4 transition-all duration-300 hover:bg-red-600 hover:border-red-600 hover:shadow-[0_0_10px_rgba(220,38,38,0.4)] tracking-wide flex items-center justify-center gap-2 font-['Oswald']">
+<span class="material-symbols-outlined">play_circle</span>
+                            VER VIDEO
+                        </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-zinc-900 border-2 border-zinc-800 hover:border-red-600 transition-all duration-300 flex flex-col group hover:scale-105 hover:shadow-[0_0_15px_rgba(220,38,38,0.5)] rounded-sm overflow-hidden h-full cursor-pointer relative">
+<div class="relative w-full h-64 overflow-hidden bg-zinc-800">
+<img alt="Treadmill" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTud1x0ngZhL-m982EU_2ii0qc50czTrNiGSEhwt_YTH5dBwbqrFlyb1hhjuthpR9QsPdeHCcqFuhKrJQDtf8DH8BFP_qQ-00skENwXblS7Ho5X3YEkYWY4Zj76nB8pPqqczOIeeElyLbJCVvdmR4-cr-ufuUqynhbxfPyRH6tPPhDdtQ4owBigdZuB_4KNd4cKP_pwp7cqnQzE2gt0oXK4L1OKPAkIIAai8TEkbK9OYkyeuoiBuU0Qw7lbZEyo6uSjtC2Y8A5oJA"/>
+<div class="absolute top-4 right-4 bg-zinc-900 px-3 py-1 border border-zinc-700">
+<span class="text-white uppercase tracking-widest text-[10px] font-bold font-['Oswald']">Cardio</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow relative z-10">
+<h3 class="text-2xl font-bold text-white mb-4">CINTA DE CORRER</h3>
+<div class="mb-6 flex-grow">
+<h4 class="text-red-500 uppercase mb-2 font-bold font-['Oswald'] tracking-wider text-sm">¿Cómo usar?</h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-red-600 text-sm mt-1 fill">fiber_manual_record</span>
+<span class="text-zinc-400 text-sm">Mantén la vista al frente, no mires tus pies.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-red-600 text-sm mt-1 fill">fiber_manual_record</span>
+<span class="text-zinc-400 text-sm">Aterriza con la parte media del pie para reducir el impacto articular.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-red-600 text-sm mt-1 fill">fiber_manual_record</span>
+<span class="text-zinc-400 text-sm">Usa la pinza de seguridad en todo momento.</span>
+</li>
+</ul>
+</div>
+<button class="w-full bg-transparent border-2 border-zinc-700 text-white font-bold py-3 px-4 transition-all duration-300 hover:bg-red-600 hover:border-red-600 hover:shadow-[0_0_10px_rgba(220,38,38,0.4)] tracking-wide flex items-center justify-center gap-2 font-['Oswald']">
+<span class="material-symbols-outlined">play_circle</span>
+                            VER VIDEO
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-zinc-800 bg-black mt-auto">
+<div class="max-w-7xl mx-auto px-8 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
+<div class="md:col-span-1">
+<span class="font-bold text-2xl tracking-wider font-['Oswald']"><span class="text-red-600 mr-1">CLUB</span><span class="text-white">GYM</span></span>
+</div>
+<div class="md:col-span-2 flex flex-wrap gap-x-8 gap-y-4 items-center justify-start md:justify-center">
+<a class="text-zinc-400 hover:text-red-600 transition-colors uppercase font-['Oswald'] text-sm tracking-wide" href="#">Privacidad</a>
+<a class="text-zinc-400 hover:text-red-600 transition-colors uppercase font-['Oswald'] text-sm tracking-wide" href="#">Términos</a>
+<a class="text-zinc-400 hover:text-red-600 transition-colors uppercase font-['Oswald'] text-sm tracking-wide" href="#">Contacto</a>
+<a class="text-zinc-400 hover:text-red-600 transition-colors uppercase font-['Oswald'] text-sm tracking-wide" href="#">Soporte</a>
+</div>
+<div class="md:col-span-1 text-zinc-500 text-xs md:text-right">
+                    © 2024 CLUB GYM. UNCOMPROMISING PERFORMANCE.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
